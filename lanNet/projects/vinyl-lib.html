@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korvi Vinyl Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("tbody tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <style media="screen">
+        body{
+            background-image: url(../assets/noise.svg);
+        }
+        main {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        #search {
+            background-color: rgba(125, 125, 125, .4);
+            width: 100%;
+            font-size: 16px;
+            color: white;
+            font-family: 'Rubik',sans-serif;
+            padding: 12px 20px 12px 40px;
+            border: 2px solid rgba(125, 125, 125, .2);
+            border-radius: 15px;
+            margin-bottom: 12px;
+        }
+
+        ::placeholder{
+            font-family: 'Rubik', sans-serif;
+        }
+
+        table {
+            width: 100vw;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        th {
+            border-bottom: 5px double white;
+            border-right: 5px double white;
+            background-color: rgba(125, 125, 125, .4);
+        }
+
+        td {
+            border-bottom: 3px solid white;
+            border-right: 3px solid white;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <div id="logo" class="menuitem">
+            <a href="../home.html">
+                <i class="fa-solid fa-network-wired"></i>
+            </a>
+        </div>
+        <div id="links" class="menuitem">
+            <a href="#">About</a>
+            <a href="../projects.html">Projects</a>
+        </div>
+        <div id="socials" class="menuitem">
+            <a href="https://twitter.com/KorvidComposer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://codepen.io/korvid">
+                <i class="fa-brands fa-codepen"></i>
+            </a>
+            <a href="https://github.com/KorvICT">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+        </div>
+        <div id="contact" class="menuitem">
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <input id="search" type="text" placeholder="Search">
+
+        <table id="lib">
+            <thead>
+                <tr>
+                    <th style="width:40%;">Record ID</th>
+                    <th style="width:60%;">Album</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-Ei-S/2x</td>
+                    <td>Happier Than Ever</td>
+                </tr>
+                <tr>
+                    <td>2021-FI-C/sW</td>
+                    <td>Optimist</td>
+                </tr>
+                <tr>
+                    <td>2022-FF-S/2x</td>
+                    <td>Hits to the Head</td>
+                </tr>
+                <tr>
+                    <td>2018-FF-S</td>
+                    <td>Always Ascending</td>
+                </tr>
+                <tr>
+                    <td>2004-FF-S</td>
+                    <td>Franz Ferdinand</td>
+                </tr>
+                <tr>
+                    <td>2022-gl-S</td>
+                    <td>old dog, new tricks</td>
+                </tr>
+                <tr>
+                    <td>2020-MG-C/sP</td>
+                    <td>Tickets To My Downfall</td>
+                </tr>
+                <tr>
+                    <td>2022-MG-S</td>
+                    <td>mainstream sellout</td>
+                </tr>
+                <tr>
+                    <td>2008-Ma-C/sCu</td>
+                    <td>Can't Stop, Won't Stop</td>
+                </tr>
+                <tr>
+                    <td>2021-mo-C/BP</td>
+                    <td>Blood Bunny</td>
+                </tr>
+                <tr>
+                    <td>2018-Må-C/tB</td>
+                    <td>Il Ballo Della Vita</td>
+                </tr>
+                <tr>
+                    <td>2021-Må-C/tO</td>
+                    <td>Teatro d'Ira: Vol. I</td>
+                </tr>
+                <tr>
+                    <td>2023-Må-S</td>
+                    <td>RUSH!</td>
+                </tr>
+                <tr>
+                    <td>2021-WI-C/sR</td>
+                    <td>lately I feel EVERYTHING</td>
+                </tr>
+                <tr>
+                    <td>2022-WI-S/45r</td>
+                    <td>&lt;COPINGMECHANISM&gt;</td>
+                </tr>
+                <tr>
+                    <td>2018-YU-S</td>
+                    <td>the underrated youth</td>
+                </tr>
+                <tr>
+                    <td>2022-YU-C/sP</td>
+                    <td>YUNGBLUD</td>
+                </tr>
+                <tr>
+                    <td>2022-YU-C/tR/a</td>
+                    <td>YUNGBLUD</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
