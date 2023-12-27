@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap');
+@import url(../inkmint.css);
+
 :root {
-    --bg: rgb(12, 25, 7);
-    --border: rgba(254, 254, 254, 0.15);
-    --highlight: rgb(128, 88, 195);
+    --bg: var(--background);
+    --highlight: var(--accent);
     --yt: rgb(229, 57, 53);
     --glass: rgba(125, 125, 125, 0.25);
   }
@@ -22,7 +23,7 @@
   h1, h2, h3, a, p, span, table{
     font-family: 'Monaspace Krypton', "Rubik", sans-serif;
     font-weight: 400;
-    color: white;
+    color: var(--text);
   }
   
   a {
