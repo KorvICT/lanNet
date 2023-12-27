@@ -197,7 +197,7 @@ main > article > .a-title, main > article > .a-nav {
  
  main > article > .a-title > h2 {
     flex-basis: 50%;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Monaspace Argon',"Montserrat", sans-serif;
     font-size: 3.5rem;
     line-height: 3rem;
     margin: 0px;
